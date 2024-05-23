@@ -77,6 +77,8 @@ func main() {
 
 	if err != nil {
 		fmt.Println(ansi.Red, fmt.Sprintf("Error: %s", err))
+                reset := ansi.ColorCode("reset")
+                fmt.Println(reset)
 		os.Exit(1)
 	}
 }
